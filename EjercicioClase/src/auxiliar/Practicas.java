@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.Set;
-import modelo.Nifs;
 import modelo.Datos;
 import modelo.Equipo;
 import modelo.Estudiante;
@@ -636,15 +635,21 @@ public class Practicas {
 			}
 		}
 
-		public void listaEstudiantes(Estudiante[] lista) {
+		public ArrayList<Estudiante> listaEstudiantes(ArrayList<Estudiante> lista) {
+			
 			for (Estudiante estudiante : lista) {
-				// if (estudiante != null)
+				
+				
 				try {
+					
 					System.out.println(estudiante.getNombre());
+					
 				} catch (NullPointerException e) {
 
 				}
 			}
+			
+			return lista;
 		}
 
 		public int visitantesIslaYear(int isla, int[][] v) {
@@ -711,7 +716,7 @@ public class Practicas {
 			}
 		}
 		
-		public void recorrerMatrizIrregularPorColumnas(ArrayList<ArrayList<Integer>> matriz) {
+		public ArrayList<ArrayList<Integer>> recorrerMatrizIrregularPorColumnas(ArrayList<ArrayList<Integer>> matriz) {
 			
 			int JMAX = 0;
 			
@@ -738,6 +743,7 @@ public class Practicas {
 
 				}
 			}
+			return matriz;
 		}
 
 		
@@ -774,7 +780,7 @@ public class Practicas {
 			}
 		}
 		
-	public void recorrerMatrizIrregularPorColumnas2(ArrayList<ArrayList<Integer>> matriz) {
+	public ArrayList<ArrayList<Integer>> recorrerMatrizIrregularPorColumnas2(ArrayList<ArrayList<Integer>> matriz) {
 			
 			int JMAX = 0;
 			
@@ -804,6 +810,8 @@ public class Practicas {
 
 				}
 			}
+			return matriz;
 		}
 		
+	
 	}

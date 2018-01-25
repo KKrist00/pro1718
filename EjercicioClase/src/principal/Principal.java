@@ -176,11 +176,15 @@ public class Principal {
 		*/
 		
 		Practicas practicas = new Practicas();
-	
-	
-		float[] movimiento= {10.0f, -5.0f,20.5f};
-		practicas.calculaSaldo(0, movimiento);
 		
+		ArrayList<Float>Practicas = new ArrayList<Float>();
+		
+		Practicas.add(10.0f);
+		Practicas.add(-5.0f);
+		Practicas.add(20.5f);
+		Practicas.add(-20.0f);
+	
+			practicas.calculaSaldo(0, Practicas);
 		
 		
 		 
